@@ -1,4 +1,4 @@
-# Rock, paper and sissors
+# Rock, paper and scissors
 
 Project made during Udemy classes, but with some improvements
 

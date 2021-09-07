@@ -62,23 +62,23 @@
         android:background="@drawable/round_corner"
         android:onClick="selectedPaper"
         android:scaleType="centerInside"
-        app:layout_constraintEnd_toStartOf="@+id/btSissors"
+        app:layout_constraintEnd_toStartOf="@+id/btScissors"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/btRock"
         app:layout_constraintTop_toBottomOf="@+id/txtResult"
         app:srcCompat="@drawable/paper_gesture" />
 
     <ImageButton
-        android:id="@+id/btSissors"
+        android:id="@+id/btScissors"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_marginTop="24dp"
         android:background="@drawable/round_corner"
-        android:onClick="selectedSissors"
+        android:onClick="selectedScissors"
         android:scaleType="centerInside"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/btPaper"
         app:layout_constraintTop_toBottomOf="@+id/txtResult"
-        app:srcCompat="@drawable/sissors_gesture" />
+        app:srcCompat="@drawable/scissors_gesture" />
 </androidx.constraintlayout.widget.ConstraintLayout>

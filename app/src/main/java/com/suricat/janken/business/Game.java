@@ -11,7 +11,6 @@ import com.suricat.janken.model.ResultTypes;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
-import java.util.stream.Collectors;
 
 public class Game {
     private List<Gesture> gestures;
@@ -20,19 +19,19 @@ public class Game {
         gestures = new ArrayList<>();
 
         Gesture rock = new Gesture(GestureTypes.Rock);
-        rock.addStrength(GestureTypes.Sissors);
+        rock.addStrength(GestureTypes.Scissors);
         rock.addWeakness(GestureTypes.Paper);
         gestures.add(rock);
 
         Gesture paper = new Gesture(GestureTypes.Paper);
         paper.addStrength(GestureTypes.Rock);
-        paper.addWeakness(GestureTypes.Sissors);
+        paper.addWeakness(GestureTypes.Scissors);
         gestures.add(paper);
 
-        Gesture sissors = new Gesture(GestureTypes.Sissors);
-        sissors.addStrength(GestureTypes.Paper);
-        sissors.addWeakness(GestureTypes.Rock);
-        gestures.add(sissors);
+        Gesture scissors = new Gesture(GestureTypes.Scissors);
+        scissors.addStrength(GestureTypes.Paper);
+        scissors.addWeakness(GestureTypes.Rock);
+        gestures.add(scissors);
     }
 
     @RequiresApi(api = Build.VERSION_CODES.N)

@@ -31,8 +31,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     @RequiresApi(api = Build.VERSION_CODES.N)
-    public void selectedSissors (View v) {
-        handlePlayerOptionSelected(GestureTypes.Sissors);
+    public void selectedScissors(View v) {
+        handlePlayerOptionSelected(GestureTypes.Scissors);
     }
 
     @RequiresApi(api = Build.VERSION_CODES.N)
@@ -47,8 +47,8 @@ public class MainActivity extends AppCompatActivity {
             case Paper:
                 imgOponentPlay.setImageResource(R.drawable.paper_gesture);
                 break;
-            case Sissors:
-                imgOponentPlay.setImageResource(R.drawable.sissors_gesture);
+            case Scissors:
+                imgOponentPlay.setImageResource(R.drawable.scissors_gesture);
                 break;
         }
 
